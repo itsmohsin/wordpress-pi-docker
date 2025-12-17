@@ -39,7 +39,7 @@ You do **not** need to install WordPress, PHP, or MySQL manually.
 ## Project structure
 **wordpress-pi-devops**/
 * /docker-compose.yml
-* /.env.example
+* /.env.example (rename file to .env and update credentials)
 * /README.md
 * /scripts/ install_docker.sh deploy.sh backup.sh restore.sh
 * /backups/
