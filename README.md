@@ -37,16 +37,12 @@ You do **not** need to install WordPress, PHP, or MySQL manually.
 ---
 
 ## Project structure
-wordpress-pi-devops/
-├── docker-compose.yml
-├── .env.example
-├── README.md
-├── scripts/
-│ ├── install_docker.sh
-│ ├── deploy.sh
-│ ├── backup.sh
-│ └── restore.sh
-└── backups/
+**wordpress-pi-devops**/
+* /docker-compose.yml
+* /.env.example
+* /README.md
+* /scripts/ install_docker.sh deploy.sh backup.sh restore.sh
+* /backups/
 
 
 ---
@@ -74,21 +70,16 @@ Find your Raspberry Pi IP:
 
 hostname -I
 
-
-## Open in browser:
-
+## 5. Complete WordPress setup in the browser.
 http://<raspberry_pi_ip>:8080
 
-
-Complete WordPress setup in the browser.
-
-## Backup the website
+### Backup the website
 ./scripts/backup.sh
 
 
 This saves the database in the backups/ folder.
 
-## Restore the website
+### Restore the website
 ./scripts/restore.sh backups/db_<timestamp>.sql
 
 
@@ -99,7 +90,7 @@ If something breaks
 Docker automatically restarts the services.
 Your data stays safe because it is stored outside containers.
 
-# Notes
+## Notes
 
 This is a learning and demo project
 
@@ -108,5 +99,3 @@ Not meant for production use
 .env file should NOT be uploaded to GitHub
 
 ## Thank You
-# test cicd
-# git test
